@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Varela Round', sans-serif; /* Apply default font */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 6px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('headphone.jpg');
+    background-size: cover; /* Ensures background image covers the container */
+    background-position: center; /* Centers the background image */
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Align icons vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+#myProgressBar {
+    width: 70%;
+    margin: 10px 0; /* Space around the progress bar */
+    cursor: pointer;
+}
+
+.songitemcontainer {
+    margin-top: 84px; /* Space to account for fixed or sticky elements */
+    display: flex;
+    flex-direction: column; /* Stack song items vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.songitem {
+    height: 50px;
+    display: flex;
+    width: 500%; /* Adjusted to ensure full width of container */
+    max-width: 400px; /* Set a maximum width for large screens */
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10px; /* Added padding for spacing */
+    position: relative; /* To ensure proper alignment of child elements */
+    left: 2vw;
+}
+
+.songitem img {
+    width: 43px;
+    margin: 0 10px; /* Consistent spacing */
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 10px;
+}
+
+.songitem i {
+    cursor: pointer;
+}
+
+/* Adjustments to ensure layout consistency */
+.songinfo {
+    display: flex;
+    
+    align-items: flex-start; /* Align text to start */
+    position: absolute; /* Ensure proper alignment */
+    left: 2vw;
+    font-family: 'Varela Round', sans-serif;
+}
+ .songinfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+ }
